@@ -20,6 +20,18 @@
       },
       "doc5": {
         "title": "Fifth Document"
+      },
+      "markup-ciceromark": {
+        "title": "CiceroMark"
+      },
+      "markup-commonmark": {
+        "title": "CommonMark"
+      },
+      "markup-preliminaries": {
+        "title": "Preliminaries"
+      },
+      "markup-templatemark": {
+        "title": "TemplateMark"
       }
     },
     "links": {
@@ -29,9 +41,11 @@
       "Blog": "Blog"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Introduction": "Introduction",
+      "Getting Started": "Getting Started",
+      "Template Guides": "Template Guides",
+      "Tutorials": "Tutorials",
+      "Reference Manual": "Reference Manual"
     }
   },
   "pages-strings": {

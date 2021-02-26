@@ -1,4 +1,0 @@
-{
-    "$class": "org.legalschema.articles.MyRequest",
-    "input": "World"
-}

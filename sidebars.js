@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
+    Markup: ['markup-preliminaries', 'markup-commonmark', 'markup-ciceromark', 'markup-templatemark' ],
     Features: ['mdx'],
   },
 };

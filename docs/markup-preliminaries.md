@@ -1,9 +1,9 @@
 ---
 id: markup-preliminaries
-title: Preliminaries
+title: Markdown & CommonMark
+sidebar_label: Markdown & CommonMark
+slug: /
 ---
-
-## Markdown & CommonMark
 
 The text for Accord Project templates is written using markdown. It builds on the [CommonMark](https://commonmark.org) standard so that any CommonMark document is valid text for a template or contract.
 

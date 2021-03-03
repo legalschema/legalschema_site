@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import LegalEditor from './legaleditor';
 
 const features = [
   {
@@ -78,6 +79,14 @@ function Home() {
         </div>
       </header>
       <main>
+      <section className={styles.features}>
+        <div className="container">
+        <h1>Contract Editor</h1>
+          <div className="row">
+              <LegalEditor/>
+          </div>
+        </div>
+      </section>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">

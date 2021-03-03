@@ -1,3 +1,11 @@
+
+// const css1 = require.resolve('./src/css/semantic.min.css');
+const css2 = require.resolve('./src/css/custom.css');
+
+console.log(css2);
+
+const combinedCss = css2;
+
 module.exports = {
   title: 'Legal Schema',
   tagline: 'Open Legal Schema and Templates for the UK',
@@ -79,9 +87,10 @@ module.exports = {
             'https://github.com/legalschema/legalschema_site/edit/master/website/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: combinedCss,
         },
       },
     ],
   ],
+  plugins: ['contracteditor-webpack-plugin']
 };

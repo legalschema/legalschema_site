@@ -78,7 +78,7 @@ const LegalEditor = () => {
   useEffect(() => {
     if(editor) {
       console.log("Loading template...");
-      Template.fromUrl('https://templates.accordproject.org/archives/company-information@0.2.1-cicero.cta')
+      Template.fromUrl('https://templates.legalschema.org/archives/bill-of-lading@0.1.0.cta')
         .then((template) => {
           store.dispatch(addTemplate(template));
 

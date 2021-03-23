@@ -28,7 +28,7 @@ const features = [
   },
   {
     title: 'Contract Editor',
-    imageUrl: 'img/templates.png',
+    imageUrl: 'img/editor.png',
     description: (
       <>
         <a href="https://create.legalschema.org">Edit rich-text structured contracts on the web.</a>

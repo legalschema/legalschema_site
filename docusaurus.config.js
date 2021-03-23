@@ -83,6 +83,5 @@ module.exports = {
         },
       },
     ],
-  ],
-  plugins: ['contracteditor-webpack-plugin']
+  ]
 };

@@ -7,9 +7,9 @@ console.log(css2);
 const combinedCss = css2;
 
 module.exports = {
-  title: 'Legal Schema',
-  tagline: 'Open Legal Schema and Templates for the UK',
-  url: 'https://legalschema.netlify.app',
+  title: 'UK Legal Schema',
+  tagline: 'Open Legal Schemas and Templates for the UK',
+  url: 'https://legalschema.org',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -18,10 +18,10 @@ module.exports = {
   projectName: 'legalschema_site', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Legal Schema',
+      title: 'UK Legal Schema',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Legal Schema Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -53,16 +53,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/legalschema',
             },
           ],
         },

@@ -9,32 +9,20 @@ import LegalEditor from './legaleditor';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Schemas',
+    imageUrl: 'img/schemas.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <a href="https://schemas.legalschema.org">Schemas (data models) for UK Legal concepts.</a>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Templates',
+    imageUrl: 'img/templates.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <a href="https://templates.legalschema.org">Contract and Clause templates for the UK Legal industry.</a>
       </>
     ),
   },
@@ -60,7 +48,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -69,7 +57,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'button button--outline button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
@@ -81,23 +69,13 @@ function Home() {
       <main>
       <section className={styles.features}>
         <div className="container">
-        <h1>Contract Editor</h1>
           <div className="row">
-              <LegalEditor/>
+            {features.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
           </div>
         </div>
       </section>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
       </main>
     </Layout>
   );

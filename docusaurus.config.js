@@ -1,8 +1,4 @@
-
-// const css1 = require.resolve('./src/css/semantic.min.css');
 const css2 = require.resolve('./src/css/custom.css');
-
-console.log(css2);
 
 const combinedCss = css2;
 
@@ -37,6 +33,10 @@ module.exports = {
         },
       ],
     },
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch:true,
+    },
     footer: {
       style: 'dark',
       links: [
@@ -44,7 +44,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Marukup Guides',
+              label: 'Markup Guides',
               to: 'docs/',
             },
           ],

@@ -1,0 +1,30 @@
+@startuml
+title
+Base Types
+endtitle
+
+class Concept << (A,grey) >> {
+}
+
+class Asset << (A,green) >> {
+   o String id
+}
+Asset --|> Concept
+
+class Participant << (P,lightblue) >> {
+      o String id
+}
+Participant --|> Concept
+
+class Transaction << (T,yellow) >> {
+   + String transactionId
+   + DateTime timestamp
+}
+Transaction --|> Concept
+
+class Event {
+   + String eventId
+   + DateTime timestamp
+}
+Event --|> Concept
+@enduml

@@ -1,0 +1,54 @@
+namespace org.legalschema.demo
+
+enum Gender {
+  o MALE
+  o FEMALE
+  o OTHER
+  o UNKNOWN
+}
+
+participant Organization identified by identifier {
+  o String identifier
+  o String name optional 
+  o String description optional
+  o String duns optional
+}
+
+/**
+ * Based on http://schema.org/Person
+ */
+participant Person identified by identifier {
+  o String identifier
+  o String additionalName optional
+  --> Organization affiliation optional
+  --> Organization alumniOf optional
+  o String award optional
+  o DateTime birthDate optional
+  o DateTime deathDate optional
+}
+
+
+enum Genre {
+    o FICTION
+    o NON_FICTION
+}
+
+concept Thing {
+    o String name
+    o String url
+    o String description optional
+}
+
+concept CreativeWork extends Thing {
+    o Person author
+    o Organization copyrightHolder
+    o Genre genre
+    o String langauge
+}
+
+concept Book extends CreativeWork {
+    o String edition
+    o String format
+    o String ISBN
+    o Integer numberOfPages
+}

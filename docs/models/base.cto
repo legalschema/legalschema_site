@@ -1,0 +1,10 @@
+namespace org.legalschema.demo.types
+
+participant Party identified by partyId {
+    o String partyId
+}
+
+participant Buyer extends Party {
+    o String firstName
+    o String lastName
+}

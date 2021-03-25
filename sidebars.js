@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
-    Templates: ['markup-preliminaries', 'markup-commonmark', 'markup-ciceromark', 'markup-templatemark'],
-    Features: ['mdx'],
+    Introduction: ['introduction'],
+    Schema: ['legal-schema-language'],
+    Markup: ['legal-markup-language'],
   },
 };

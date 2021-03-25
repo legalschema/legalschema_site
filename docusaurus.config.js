@@ -44,7 +44,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Markup Guides',
+              label: 'Documentation',
               to: 'docs/',
             },
           ],

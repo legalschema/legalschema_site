@@ -23,3 +23,24 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+/* A link that has not been visited */
+a:link {
+  text-decoration: none;
+  color: lightblue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: darkcyan;
+}
+
+a:active {
+  text-decoration: underline;
+  color: green;
+}

@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/templates.png',
     description: (
       <>
-        <a href="https://templates.legalschema.org">Contract and Clause templates for the UK Legal industry.</a>
+        <a href="https://templates.legalschema.org">Contract templates for the UK Legal industry.</a>
       </>
     ),
   },
@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/editor.png',
     description: (
       <>
-        <a href="https://create.legalschema.org">Edit rich-text structured contracts on the web.</a>
+        <a href="https://create.legalschema.org">Edit structured contracts on the web.</a>
       </>
     ),
   },

@@ -1,0 +1,49 @@
+@startuml
+title
+Book Schema
+endtitle
+class org.legalschema.demo.Gender << (E,grey) >> {
+   + MALE
+   + FEMALE
+   + OTHER
+   + UNKNOWN
+}
+class org.legalschema.demo.Organization << (P,lightblue) >> {
+   + String identifier
+   + String name
+   + String description
+   + String duns
+}
+class org.legalschema.demo.Person << (P,lightblue) >> {
+   + String identifier
+   + String additionalName
+   + Organization affiliation
+   + Organization alumniOf
+   + String award
+   + DateTime birthDate
+   + DateTime deathDate
+}
+class org.legalschema.demo.Genre << (E,grey) >> {
+   + FICTION
+   + NON_FICTION
+}
+class org.legalschema.demo.Thing {
+   + String name
+   + String url
+   + String description
+}
+class org.legalschema.demo.CreativeWork {
+   + Person author
+   + Organization copyrightHolder
+   + Genre genre
+   + String langauge
+}
+org.legalschema.demo.CreativeWork --|> org.legalschema.demo.Thing
+class org.legalschema.demo.Book {
+   + String edition
+   + String format
+   + String ISBN
+   + Integer numberOfPages
+}
+org.legalschema.demo.Book --|> org.legalschema.demo.CreativeWork
+@enduml

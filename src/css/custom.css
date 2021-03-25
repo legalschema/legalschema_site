@@ -27,7 +27,7 @@
 /* A link that has not been visited */
 a:link {
   text-decoration: none;
-  color: lightblue;
+  color: royalblue;
 }
 
 a:visited {

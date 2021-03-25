@@ -47,7 +47,7 @@ Structured data representation of the data for a clause:
 }
 ```
 
-**Formatting** - {{#clause clauseName}} to define a clause as a component within a contract and ## to indicate a heading for the clause.
+**Formatting** - `{{#clause clauseName}}` to define a clause as a component within a contract and ## to indicate a heading for the clause.
 
 **Parameters** - Syntactically distinct elements within the text of the document such as {{rate}} which operates as a placeholder to indicate that some value for the interest rate should be entered. These, together, comprise the structured data model for the document.
 
